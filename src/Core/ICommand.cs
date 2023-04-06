@@ -2,7 +2,7 @@ using MediatR;
 
 namespace Core;
 
-public interface ICommand<out T> : IRequest<T>
+public interface ICommand: IRequest
 {
     
 }

@@ -1,20 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\WebAPI\WebAPI.csproj", "{DFED7393-EA6D-4EB4-87A9-644352D65AED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.WebAPI", "src\Order.WebAPI\Order.WebAPI.csproj", "{DFED7393-EA6D-4EB4-87A9-644352D65AED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "src\Core\Core.csproj", "{CCCF312A-6D8C-4FB3-AB3B-975941420F98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Domain", "src\Order.Domain\Order.Domain.csproj", "{67F039F5-1B22-4564-9E73-849F7006C218}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order", "src\Order\Order.csproj", "{67F039F5-1B22-4564-9E73-849F7006C218}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Domain", "src\Customer.Domain\Customer.Domain.csproj", "{D40BB020-B181-4617-ACB2-C64DFD947DEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer", "src\Customer\Customer.csproj", "{D40BB020-B181-4617-ACB2-C64DFD947DEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{793EEE98-38A9-4B51-A06F-ED783690778F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Domain", "src\Shared.Domain\Shared.Domain.csproj", "{3483FE06-E71E-44DE-9926-D30342701A00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{3483FE06-E71E-44DE-9926-D30342701A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Domain", "src\Product.Domain\Product.Domain.csproj", "{BCC578F7-8F1D-4D4C-8C39-54E1A414B5C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product", "src\Product\Product.csproj", "{BCC578F7-8F1D-4D4C-8C39-54E1A414B5C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.CQRS", "src\Order.CQRS\Order.CQRS.csproj", "{317BCBDD-7BF4-40FA-AF68-EA19F0345057}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Application", "src\Order.Application\Order.Application.csproj", "{317BCBDD-7BF4-40FA-AF68-EA19F0345057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Infrastructure", "src\Order.Infrastructure\Order.Infrastructure.csproj", "{42EA46B5-3785-41CF-A890-6A115B6AA845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{317BCBDD-7BF4-40FA-AF68-EA19F0345057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{317BCBDD-7BF4-40FA-AF68-EA19F0345057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{317BCBDD-7BF4-40FA-AF68-EA19F0345057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EA46B5-3785-41CF-A890-6A115B6AA845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EA46B5-3785-41CF-A890-6A115B6AA845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EA46B5-3785-41CF-A890-6A115B6AA845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42EA46B5-3785-41CF-A890-6A115B6AA845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DFED7393-EA6D-4EB4-87A9-644352D65AED} = {793EEE98-38A9-4B51-A06F-ED783690778F}
@@ -59,5 +65,6 @@ Global
 		{3483FE06-E71E-44DE-9926-D30342701A00} = {793EEE98-38A9-4B51-A06F-ED783690778F}
 		{BCC578F7-8F1D-4D4C-8C39-54E1A414B5C5} = {793EEE98-38A9-4B51-A06F-ED783690778F}
 		{317BCBDD-7BF4-40FA-AF68-EA19F0345057} = {793EEE98-38A9-4B51-A06F-ED783690778F}
+		{42EA46B5-3785-41CF-A890-6A115B6AA845} = {793EEE98-38A9-4B51-A06F-ED783690778F}
 	EndGlobalSection
 EndGlobal

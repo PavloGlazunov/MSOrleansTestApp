@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Order.Application.Commands;
+using Order.Application.Queries;
 using Shared.DTOs;
 
 namespace Order.WebAPI.Controllers;
@@ -24,5 +25,12 @@ public class OrdersController : ControllerBase
     {
         var orderCreateCmd = new CreateOrderCommand(order);
         await _mediator.Send(orderCreateCmd);
+    }
+
+    [HttpGet]
+    public async Task<IList<OrderDto>> GetAll()
+    {
+        var query = new GetOrdersQuery();
+        return await _mediator.Send(query);
     }
 }

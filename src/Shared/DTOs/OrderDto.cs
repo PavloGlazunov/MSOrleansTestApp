@@ -1,3 +1,7 @@
 namespace Shared.DTOs;
 
-public record OrderDto(List<ProductDto> Items, Guid CustomerId);
+public class OrderDto
+{
+    public IList<ProductDto> Items { get; set; }
+    public Guid CustomerId { get; set; }
+}

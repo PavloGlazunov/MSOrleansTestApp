@@ -1,4 +1,3 @@
-using System.Reflection;
 using Order.Application;
 using Order.Infrastructure;
 
@@ -8,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<MongoDbOptions>(builder.Configuration.GetSection("MongoDb"));
 
-builder.Services.AddApplication();
 builder.Services.AddInfrastrusture();
+builder.Services.AddApplication();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -12,6 +12,7 @@ public class Order : IAggregateRoot
     
     public Order(Customer.Domain.Customer customer)
     {
+        Id = Guid.NewGuid();
         CustomerId = customer.Id;
     }
 

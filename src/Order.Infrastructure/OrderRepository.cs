@@ -22,7 +22,7 @@ public class OrderRepository : IOrderRepository
         return await cursor.FirstAsync();
     }
 
-    public async Task<List<Domain.Order>> FindAll()
+    public async Task<IList<Domain.Order>> FindAll()
     {
        return await _orders.AsQueryable().ToListAsync();
     }

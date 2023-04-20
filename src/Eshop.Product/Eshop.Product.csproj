@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Eshop.Product</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Eshop.Core\Eshop.Core.csproj" />
+      <ProjectReference Include="..\Eshop.Shared\Eshop.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

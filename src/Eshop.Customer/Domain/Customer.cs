@@ -1,4 +1,4 @@
-﻿using Eshop.Core;
+﻿using Eshop.Core.Domain;
 
 namespace Eshop.Customer.Domain;
 

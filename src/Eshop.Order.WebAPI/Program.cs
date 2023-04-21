@@ -1,5 +1,6 @@
+using Eshop.Core.Infrastrusture;
 using Eshop.Order.Application;
-using Eshop.Order.Infrastructure;
+using Eshop.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 

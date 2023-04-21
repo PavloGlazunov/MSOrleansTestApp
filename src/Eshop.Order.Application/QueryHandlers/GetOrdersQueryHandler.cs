@@ -3,16 +3,17 @@ using MediatR;
 using Eshop.Order.Application.Queries;
 using Eshop.Order.Ports;
 using Eshop.Shared.DTOs;
-
+using Eshop.Core.Infrastrusture;
+using Eshop.Order.Domain;
 
 namespace Eshop.Order.Application.QueryHandlers
 {
     public class GetOrdersQueryHandler : IRequestHandler<GetOrdersQuery, IList<OrderDto>>
     {
-        private readonly IOrderRepository _orderRepository;
+        private readonly IRepository<Domain.Order> _orderRepository;
         private readonly IMapper _mapper;
 
-        public GetOrdersQueryHandler(IOrderRepository orderRepository, IMapper mapper)
+        public GetOrdersQueryHandler(IRepository<Domain.Order> orderRepository, IMapper mapper)
         {
             _orderRepository = orderRepository;
             _mapper = mapper;

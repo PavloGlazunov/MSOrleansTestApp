@@ -1,4 +1,4 @@
-using Eshop.Core;
+using Eshop.Core.Domain;
 using Eshop.Shared.Domain;
 
 namespace Eshop.Order.Domain;

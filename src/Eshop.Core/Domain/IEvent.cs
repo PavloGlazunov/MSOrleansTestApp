@@ -1,4 +1,4 @@
-namespace Eshop.Core;
+namespace Eshop.Core.Domain;
 
 public interface IEvent
 {

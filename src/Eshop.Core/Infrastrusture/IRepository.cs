@@ -1,4 +1,4 @@
-namespace Eshop.Core;
+namespace Eshop.Core.Infrastrusture;
 
 public interface IRepository<TEntity>
 {

@@ -1,4 +1,4 @@
-using Eshop.Core;
+using Eshop.Core.Infrastrusture;
 
 namespace Eshop.Order.Ports;
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Eshop.Order.Ports;
+using Eshop.Shared;
 
 namespace Eshop.Order.Infrastructure;
 

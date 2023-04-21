@@ -1,4 +1,4 @@
-namespace Eshop.Order.Infrastructure;
+namespace Eshop.Shared;
 
 public class MongoDbOptions
 {

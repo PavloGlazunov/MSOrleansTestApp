@@ -5,9 +5,9 @@ namespace Eshop.Order.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddInfrastrusture(this IServiceCollection serviceCollection)
-    {
-        serviceCollection.AddSingleton<IOrderRepository, OrderRepository>();
-        return serviceCollection;
-    }
+    //public static IServiceCollection AddInfrastrusture(this IServiceCollection serviceCollection)
+    //{
+    //    serviceCollection.AddSingleton<IOrderRepository, OrderRepository>();
+    //    return serviceCollection;
+    //}
 }

@@ -1,14 +1,14 @@
 using MediatR;
 using Eshop.Order.Application.Commands;
-using Eshop.Order.Ports;
+using Eshop.Core.Infrastrusture;
 
 namespace Eshop.Order.Application.CommandHandlers;
 
 public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand>
 {
-    private readonly IOrderRepository _orderRepository;
+    private readonly IRepository<Domain.Order> _orderRepository;
 
-    public CreateOrderCommandHandler(IOrderRepository orderRepository)
+    public CreateOrderCommandHandler(IRepository<Domain.Order> orderRepository)
     {
         _orderRepository = orderRepository;
     }
